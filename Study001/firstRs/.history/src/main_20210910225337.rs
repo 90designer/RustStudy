@@ -87,8 +87,8 @@ fn main(){
     let arr1 = [1,2,3,4];
     // 定义数组类型，[类型; 长度]
     let arr2:[char;3] = ['a','b','c'];
-    let arr3 = ['C';3] ; // 标识['C','C','C']
-    println!("{}",arr2[0]);
+    let arr3 = ['C';3] ;
+    println!(arr3);
     
     
 

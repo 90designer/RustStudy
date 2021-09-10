@@ -25,7 +25,7 @@
 // }
 
 fn main(){
-    // ======[Rust变量和可变性]=====
+    // Rust变量和可变性
     let a  = 5;
     let b = 5.01;
     let c = true;
@@ -33,9 +33,8 @@ fn main(){
     let e = '\u{1f601}';
     let f  = "string"; //  不可变的字符串
     let mut g = "mut string";  // 可变变量
-    g = "哈哈哈可变的";
 
-    // =====[Rust 常量]=====
+    // Rust 常量
     // 1, 不可以使用mut 常量永远不可变
     // 2，常量使用const，类型必须标注
     // 3，常量可以在任何作用域内声明，包括全局作用域
@@ -45,8 +44,8 @@ fn main(){
     // 6，数字可加下划线，增强可读性。
     const MAX_POINTS:u32 = 100_0000; 
 
-    // =====[Rust Shadowing]=====
-    // 变量名可以重复定义(名字相同，但是新的变量，如果没有使用let将会报类型错误)
+    // Rust Shadowing
+    // 变量名可以重复定义(名字相同，但是新的变量)
     let x = 1;
     let x = x+ 1;
     let x = x * 6;
@@ -54,45 +53,8 @@ fn main(){
     let spaces = "    ";
     let spaces = spaces.len(); // 根据计算机架构 usize
 
-    // ===== [Rust 数据类型] ====
-    // Rust标量类型（4种）
-    // 1. 整数类型
-    // 2. 浮点类型
-    // 3. 布尔类型
-    // 4. 字符类型 （4个字节）
-    let fd = 2.01;
-    let fd2:f32 = 100.0;
-    let uInt:u8 = 255;
-    let  charAttr = 'z';
-    let charAttr:char = 'v';
-    let charAttr:char = '\u{D7ff1}';
 
-    // Rust 符合类型（2种）
-    // 可将多个值放在一个类型里
-    // 1. 元组（Tuple） 
-        // 长度固定
-        // 多个类型值
-    // 2. 数组
-        // 可以多个类型值
-        // 每个元素类型必须相同
-        // 长度也是固定的
-
-    let tuple1 = (100,-2.1,100000);
-    let tuple2:(i8,char, &str) = ( -10, '1',"字符串");
-    // 类似js的解构语法
-    let (mut t1, t2, t3 ) = tuple2; 
-    // 获取元组中元素
-    println!("元组：{},{},{}", tuple2.0, tuple2.1, tuple2.2);
-
-    let arr1 = [1,2,3,4];
-    // 定义数组类型，[类型; 长度]
-    let arr2:[char;3] = ['a','b','c'];
-    let arr3 = ['C';3] ; // 标识['C','C','C']
-    println!("{}",arr2[0]);
-    
-    
-
-
+    g = "哈哈哈可变的";
     println!("{}", a);
     println!("{}", b);
     println!("{}", c);
@@ -102,7 +64,5 @@ fn main(){
     println!("{}", g);
     println!("{}", MAX_POINTS);
     println!("{}", x);
-    println!("{}", uInt);
-    println!("{}", charAttr);
 
 }

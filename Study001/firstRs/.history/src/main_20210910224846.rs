@@ -84,15 +84,6 @@ fn main(){
     // 获取元组中元素
     println!("元组：{},{},{}", tuple2.0, tuple2.1, tuple2.2);
 
-    let arr1 = [1,2,3,4];
-    // 定义数组类型，[类型; 长度]
-    let arr2:[char;3] = ['a','b','c'];
-    let arr3 = ['C';3] ; // 标识['C','C','C']
-    println!("{}",arr2[0]);
-    
-    
-
-
     println!("{}", a);
     println!("{}", b);
     println!("{}", c);
