@@ -26,8 +26,3 @@ fn string_fn2(){
     let s2 = s1; // 此时s1已经移动到s2,s1不存在了，防止出现两次释放内存。
     println!("{}",s1);
 }
-// 克隆 == 栈和堆上的数据都复制。
-fn string_fn3(){
-    let s1 = String::from("s1堆中的数据");
-    let s2 = s1.clone(); 
-}
