@@ -79,7 +79,7 @@ fn main(){
 
     let tuple1 = (100,-2.1,100000);
     let tuple2:(i8,char, &str) = ( -10, '1',"字符串");
-    // 类似js的解构语法
+    // 类似js的解构语法(模式匹配)
     let (mut t1, t2, t3 ) = tuple2; 
     // 获取元组中元素
     println!("元组：{},{},{}", tuple2.0, tuple2.1, tuple2.2);
@@ -179,4 +179,9 @@ fn another_function (x:&str){
 // 定义返回值类型
 fn fn1()->i64{
     5
+}
+// 函数多个返回值
+fn get_length(someThing:String)->(String, usize){
+    let length = someThing.len();
+    (someThing, length)
 }
