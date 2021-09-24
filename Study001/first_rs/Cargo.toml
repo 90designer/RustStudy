@@ -1,12 +1,18 @@
 [package]
-name = "first_rs"
-version = "0.1.0"
+name = "first_rs_001"
+version = "0.1.1"
 edition = "2018"
+author = "90design"
+license = "MIT"
+description = "这是一个新手项目"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rand = "^0.8.4"
+
+[profile.dev]
+opt-level = 0
 
 [profile.release]
 panic = 'abort'
+opt-level = 3
